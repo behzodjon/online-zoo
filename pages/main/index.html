@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online-zoo</title>
+    <link rel="shortcut icon" href="../../assets/icons/panda_icon.svg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../assets/styles/normalize.css" />
+    <link rel="stylesheet" href="../main/style.css" />
+  </head>
+  <body>
+    <!-- header  -->
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__logo logo__container">
+          <a href="#">
+            <p class="logo__title">PetStory online</p>
+            <img class="logo__img" src="../../assets/icons/logo_bamboo.svg" alt="" />
+          </a>
+        </div>
+
+        <!-- navigation -->
+        <nav class="nav header__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link nav__link-active" href="#">About</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Map</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Zoos</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Donate</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Contact Us</a>
+            </li>
+          </ul>
+          <div class="nav__author">
+            <a class="nav__link" href="#" target="_blank">Designed by ©</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- main -->
+      <section class="main">
+        <div class="container main__container">
+          <div class="main__wrapper">
+            <p class="main__title">Watch your <span>favorite</span> animal online</p>
+          </div>
+          <div class="main__button">
+            <button class="button button__rounded"><a class="button__link" href="#">watch online</a></button>
+          </div>
+        </div>
+      </section>
+
+      <!-- about -->
+      <section class="about">
+        <div class="container about__container">
+          <img class="about__image" src="../../assets/images/BambooCap.png" alt="Bamboo cap" />
+          <div class="about__content">
+            <h2 class="about__title">The Backstage of the Wilderness World.</h2>
+            <p class="about__text about__text-line">
+              The site was founded on the basis of a volunteer movement to protect and care for animals.
+            </p>
+            <p class="about__subtitle">How it works</p>
+            <p class="about__text">
+              The main goal is to help the animals, as well as the nature reserves and zoos where they are kept. We are
+              currently working on video projects targeting pandas in China, eagles on an island near Los Angeles,
+              alligators in Florida and gorillas in the Congo. These have a total of more than 1,500 mammals and
+              reptiles.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- animals -->
+      <section class="animals">
+        <div class="nav__container">
+          <button class="arrow nav__prev">
+            <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M5.00179 9.10745L5.10646 9.2094L5.21112 9.10745L5.35128 8.97092L5.46159 8.86347L5.35128 8.75602L1.74841 5.24656L17 5.24656H17.15V5.09656V4.90344V4.75344H17L1.74878 4.75344L5.35129 1.24398L5.46158 1.13653L5.35128 1.02909L5.21112 0.892552L5.10646 0.790595L5.00179 0.892553L0.895334 4.89275L0.785027 5.0002L0.895338 5.10764L5.00179 9.10745Z"
+                fill="white"
+                stroke="white"
+                stroke-width="0.3"
+              />
+            </svg>
+          </button>
+          <button class="arrow nav__next">
+            <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12.9982 0.892548L12.8935 0.7906L12.7889 0.892552L12.6487 1.02908L12.5384 1.13653L12.6487 1.24398L16.2516 4.75344H1H0.85V4.90344V5.09656V5.24656H1H16.2512L12.6487 8.75602L12.5384 8.86347L12.6487 8.97091L12.7889 9.10745L12.8935 9.2094L12.9982 9.10745L17.1047 5.10725L17.215 4.9998L17.1047 4.89236L12.9982 0.892548Z"
+                fill="white"
+                stroke="white"
+                stroke-width="0.3"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="container animals__container">
+          <div class="animals__slider">
+            <div class="slide__layout active"></div>
+            <div class="slide__layout"></div>
+            <div class="slide__layout"></div>
+          </div>
+          <div class="animals__button">
+            <button class="button button__rounded"><a class="button__link" href="#map">choose your favorite</a></button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="../main/script.js"></script>
+  </body>
+</html>
